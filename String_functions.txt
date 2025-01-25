@@ -1,0 +1,77 @@
+String Functions
+
+
+1.CONCATINATION -> combine two string
+
+query  -> select concat("hello", "world");
+output-> helloworld
+
+2.CONCAT_WS  -> concat with separator
+query  -> select concat_ws("!", "hello","world");
+
+output-> hello!world
+
+
+3.SUBSTRING  -> work with part of string  (select substring("string", starting(where you want to start), length of substring)
+
+query -> select substring("Hello world", 1, 4)
+output -> Hell
+
+query  -> select substr("Hello World", 7, 3);
+output -> Wor
+
+
+4.REPLACE -> replace part of string (select replace(string, 'what you want to replace', 'with you want to replace')
+
+query -> select replace("hello my name is ankush", "ankush", "dhananjay");
+outpur -> hello my name is dhananjay
+
+
+5.REVERSE  -> reverse the whole string
+
+quere -> select reverse("hello");
+output -> olleh
+
+
+6.CHAR_LENGTH  -> counts the characters in the string
+
+query -> select char_length("Hello");
+output -> 5
+
+
+7.upper() and lower()  -> upper case and lower case letter
+
+query -> select lower("HELLO");
+OUTPUT -> hello
+
+query -> select upeer("hello");
+output -> HELLO
+
+
+8.INSERT  ->  insert string at any position
+
+query -> select insert('Hello World', 7, 5, 'Universe');
+output -> Hello Universe 
+
+
+9.REPEAT  -> (str, count)
+query -> ("Hello", 3);
+output ->HelloHelloHello
+
+10. TRIM -> trim([[both | leading | trailing] [remstr] from] str)
+
+query -> select trim(   'hello'   );  // trim is used to remove spaces
+output-> hello
+
+query -> select trim(both 'x' from 'xxhelloxx');  //it  removes xx from both the side
+output -> hello
+
+query -> select trim(leading 'xx' from 'xxhelloxx')  // it removes xx from beginning of the string
+output -> helloxx
+
+query -> select trim(trailing 'xx' from 'xxhelloxx')  // it removes xx from ending of the string
+output -> xxhello
+
+
+
+
