@@ -1,0 +1,48 @@
+				REFINING SELECTIONS
+
+
+1. DISTINCT -> find duplicate records (select distinct(column_name) from table_name)
+
+query -> select distinct(names) from student;
+output -> all the duplicates names were shown
+
+query -> select distinct(name, age) from student;
+output -> all the duplicates names,age were shown
+
+
+2.ORDER BY -> sorting results in ascending or descending by default it is ascending
+
+query -> select name from student order by name;
+output -> it gives us name according to age in ascending order
+
+query -> select name from student order by name desc;
+output -> it gives us name according to age in descending order
+
+
+3.LIMIT -> it is followed by number it fetch results according to limit that how mush data will be fetched
+
+query -> select name from student limit 5;
+output -> it gives only 5 names of student
+
+query -> select name from student order by name desc limit 5;
+output -> it gives 5 name of student in descending order
+
+
+4.LIKE -> it is used to better searching in table. it is very good for the purpose if we dont know about the full name of anything that we want
+
+query -> select name from student where name like '%da%'; //this means the name contains both da 
+output -> so it give all the names starting with da
+
+
+query -> select name from student where name like 'da%'; //this means the name start with da
+output -> it give name that starts with only da
+
+query -> select name from student where name like '%da'; //this means the names end with da
+output ->  it give name that ends with only da
+
+
+ 
+
+
+
+
