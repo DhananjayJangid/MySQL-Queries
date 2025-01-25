@@ -1,0 +1,10 @@
+insert values in student table
+
+Query -> insert into <table name> values()
+
+
+insert into student(first_name, last_name, age, address, phone_no) values('Ankush', 'Sharma', 24, 'S.G.M nagar faridabad', 7838445508);   // this is first way
+
+
+insert into student values('Ankush', 'Sharma', 24, 'faridabad', 7845112236);  //this is second way
+

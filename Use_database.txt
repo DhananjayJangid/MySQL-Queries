@@ -1,0 +1,12 @@
+Query -> use(in capital letters) <database name>
+this 'USE' is used to create table in that database
+
+USE school;
+USE company;
+
+*how to check this database is used or not
+
+Query ->
+
+this query is use after (USE database query)
+select database();

@@ -1,0 +1,4 @@
+Show database -> show <database name>
+
+show school;
+show company;

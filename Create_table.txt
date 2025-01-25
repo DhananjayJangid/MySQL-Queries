@@ -1,0 +1,3 @@
+Query -> create table <table name> (column name with datatype)
+
+create table student(first_name varchar(50),last_name varchar(50), age int, address varchar(50), phone_no int);

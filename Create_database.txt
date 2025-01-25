@@ -1,0 +1,4 @@
+Query -> create database <database name>
+
+create database school;
+create database company;
