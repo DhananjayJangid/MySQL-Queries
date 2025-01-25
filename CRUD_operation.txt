@@ -1,0 +1,35 @@
+CRUD ->  CREATE READ UPDATE DELETE  .// READ UPDATE DELETE all three operatios must use where clause 
+
+CREATE -> 
+
+create table student(name varchar, age int, address varchar);
+
+insert into student values('Aman', 'Mishra', 25, 'Bihar');
+
+
+READ ->	show all the rows of the table
+
+select * from student;
+//* means all rows
+
+//if any specific column want to read then
+
+select <column name> from <table name>
+select name from student;
+select name from student where salary>50000;
+
+
+UPDATE -> if any updation is required in the table then it is updated using where clause
+
+update <table name> set <column name = values> where <condition>
+
+update student set name = 'Ankush' where name = 'Aman'; 
+
+update employees set salary = 80000 where name = 'ankush';
+
+
+DELETE -> delete data from table
+
+delete from student where name = 'Alice';
+delete from employees where salary = 30000;
+
