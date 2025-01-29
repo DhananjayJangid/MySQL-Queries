@@ -1,0 +1,43 @@
+				AGGREGATE FUNCTIONS
+
+
+1.COUNT -> it count the total number of rows
+
+query -> select count(*) from student; //* means all
+output -> it gives the total number of rows in the student table
+
+query -> select count(name) from student;
+output -> it gives the total students in the table
+
+
+2.GROUP BY -> it summarizes or aggregate identical data into single rows
+
+query -> select name from student group by name;
+output -> it gives the names with grouping
+
+3.MIN AND MAX -> minimum and maximum
+
+query -> select min(age) from student;
+output -> minimum age
+
+query max(age) from student;
+output -> maximum age
+
+
+4.SUBQUERIES -> A subquery in SQL is a query nested inside another query
+
+query -> select name, subjects from student where age > (select min(age) from student);
+
+query -> select title, pages from books where pages = (select min(pages) from books);
+
+
+5.SUM -> adding something
+
+query -> select sum(pages) from books;
+
+query -> select sum(age) from student;
+
+
+6.AVG -> find avg
+
+query -> select avg(age) from student;
