@@ -1,0 +1,34 @@
+                                            ALTER TABLE
+
+
+1.ADDING COLUMNS -> 
+
+query -> alter table student add column city varchar(20);
+
+
+2.DROPPING COLUMN -> 
+
+query -> alter table student drop column age;
+
+
+3 -> 
+3.1 RENAME TABLE -> 
+Use RENAME to rename a table
+
+query ->1. rename table student to user;
+        2. alter table student rename to users;
+
+3.2 RENAME COLUMN ->
+
+query -> alter table student rename column name to f_name;
+
+
+4.MODIFYING COLUMN -> use modify to change the column type
+
+query -> alter table student modify f_name varchar(100);
+
+CHANGE COLUMN -> use change to rename column and change its data type 
+alter table table_name change old_column_name new_column_name datatype;
+
+query -> alter table student change f_name first_name varchar(50);
+
