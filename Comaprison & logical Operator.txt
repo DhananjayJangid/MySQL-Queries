@@ -1,0 +1,79 @@
+                                               Comparison and logical operator
+
+
+1.Not Equal -> 
+
+query ->  select title from books where released_year !=2015;
+
+
+2.Not Like -> 
+
+query -> SELECT * FROM books WHERE title NOT LIKE '%e%';
+output -> only give title that not include 'e' in the title
+
+
+
+3.Greater than -> 
+
+query -> SELECT * FROM books WHERE released_year > 2005;
+
+
+4.Less than or equal to -> 
+
+query -> SELECT * FROM books WHERE pages < 200;
+
+query -> SELECT * FROM books WHERE released_year <= 1985;
+
+
+5.Logical AND -> 
+
+query -> SELECT title, author_lname, released_year FROM books WHERE released_year > 2010 AND author_lname = 'Eggers';
+
+
+6.Logical OR -> 
+
+query -> SELECT title, author_lname, released_year FROM books WHERE author_lname='Eggers' OR released_year > 2010;
+
+
+7.Between -> 
+
+query -> SELECT title, released_year FROM books WHERE released_year <= 2015 AND released_year >= 2004;
+
+query -> SELECT title, released_year FROM books WHERE released_year BETWEEN 2004 AND 2014;
+
+
+8.The IN Operator -> 
+
+query -> SELECT title, author_lname FROM books WHERE author_lname IN ('Carver', 'Lahiri', 'Smith');
+
+query -> SELECT title, author_lname FROM books WHERE author_lname NOT IN ('Carver', 'Lahiri', 'Smith');
+
+
+9.Case -> 
+
+query -> SELECT 
+    title,
+    stock_quantity,
+    CASE
+        WHEN stock_quantity BETWEEN 0 AND 40 THEN '*'
+        WHEN stock_quantity BETWEEN 41 AND 70 THEN '**'
+        WHEN stock_quantity BETWEEN 71 AND 100 THEN '***'
+        WHEN stock_quantity BETWEEN 101 AND 140 THEN '****'
+        ELSE '*****'
+    END AS stock
+FROM
+    books;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
